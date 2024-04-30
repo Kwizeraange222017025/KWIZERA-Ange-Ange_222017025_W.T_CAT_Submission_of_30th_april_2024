@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Linking to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" title="style 1" media="screen, tv, projection, handheld, print"/>
+  <!-- Defining character encoding -->
+  <meta charset="utf-8">
+  <!-- Setting viewport for responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>All Contact Address</title>
+  <style>
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: pink;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+    
+    /* Unvisited link */
+    a:link {
+      color: brown;
+    }
+
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px;
+      margin-top: 4px;
+    }
+
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 15px;
+      padding: 8px;
+    }
+
+    section {
+      padding: 10px;
+    }
+      footer{
+    text-align: center;
+    padding: 15px;
+    background-color:darkgray;
+}
+header{
+    background-color:darkgray;
+    padding: 20px;
+}
+
+  </style>
+</head>
+
+<body bgcolor="pink">
+<header>
+  
+  <form class="d-flex" role="search" action="search.php">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"name="query">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; margin-right: 10px;"><a href="./home.html">HOME</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./about.html">ABOUT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./contact.html">CONTACT</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./employees.php">EMPLOYEES</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./payroll.php">PAYROLL</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./timetracking.php">TIMETRACKING</a></li>
+    <li style="display: inline; margin-right: 10px;"><a href="./tax.php">TAX</a></li>
+  
+    <li class="dropdown" style="display: inline; margin-right: 10px;">
+      <a href="#" style="padding: 10px; color: white; background-color: skyblue; text-decoration: none; margin-right: 15px;">Settings</a>
+      <div class="dropdown-contents">
+        <!-- Links inside the dropdown menu -->
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="index.php">Logout</a>
+      </div>
+    </li>
+  </ul>
+</header>
+
+<section>
+  <h2><u>CONTACT US</u></h2>
+  <ul>
+    <li>Address: 450T Main Street, KIGALI Town</li>
+    <li>Phone: +250 123456789</li>
+    <li>Email: info@payroll.com</li>
+  </ul>
+
+  <form action="submit_contact.php" method="POST">
+    <label for="name">Names:</label><br>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Telephone:</label><br>
+    <input type="tel" id="phone" name="phone"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <input type="submit" value="send">
+  </form>
+
+  <p>Connect with us on social media or social media available to our project:</p>
+  <a href="https://www.twitter.com/stockmgt">Twitter</a>
+  <a href="https://www.facebook.com/stockmgt">Facebook</a>
+  <a href="https://www.instagram.com/stockmgt">Instagram</a>
+  <a href="https://www.linkedin.com/stockmgt">LinkedIn</a>
+  <a href="https://www.youtube.com/stockmgt">Youtube</a>
+</section>
+
+<footer>
+  <center> 
+    <h2>UR CBE BIT &copy; 2024 &reg;, Designed by: @Ange Marie KWIZERA</h2>
+  </center>
+</footer>
+
+</body>
+</html>
